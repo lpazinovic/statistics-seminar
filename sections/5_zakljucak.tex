@@ -1,0 +1,21 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+
+\newpage
+\section{Conclusion}
+
+
+
+In this seminar paper, we analyzed the relationship between searches for the terms "Trump" and "stocks" and indicators of the S\&P 500 index.
+The descriptive statistics already suggested a linear relationship between trading volume and the frequency of searches for the word "stocks", and led us to make assumptions about the distribution of the difference between the highest and lowest daily prices (HML).
+This motivated us to perform linear regression and confirm its significance by calculating confidence intervals and using a t-test.
+Using the Lilliefors version of the Kolmogorov-Smirnov test, we did not reject the assumption that the distribution of HML is log-normal.
+
+The relationship between the frequency of searches for the word "Trump" and HML was not clear from the descriptive statistics.
+Checking the Gauss-Markov conditions for linear regression of HML on the frequency of searches for the word "Trump" suggested a linear relationship between the logarithms of the two variables, but even then we could not establish statistical significance.
+However, adding the frequency of searches for the word "stocks" to the linear regression makes the effect of searches for the word "Trump" statistically significant.
+This shows that although information on the frequency of searches for the word "Trump" cannot explain HML, it is still useful provided that we have information on searches for the word "stocks".
+
+Overall, we confirmed our expectation that performing statistical analysis on data concerning financial instruments is very challenging. Many factors are difficult to analyze meaningfully (news, changes in government, and so on), which is why all the confidence intervals are quite wide.
+
+\end{document}

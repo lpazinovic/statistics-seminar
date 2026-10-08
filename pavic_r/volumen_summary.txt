@@ -1,0 +1,7 @@
+Descriptive Summary of volume :
+     Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
+1.758e+09 3.881e+09 4.432e+09 4.587e+09 4.866e+09 9.490e+09 
+
+Five Number Summary:
+   Minimum         Q1     Median         Q3    Maximum 
+1757720000 3880610000 4432250000 4866380000 9489600000 

@@ -1,0 +1,39 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+
+\newpage
+\section{Inferential statistics}
+
+\subsection{Single-parameter linear regression}
+Let $X$ denote the relative frequency of searches for the word ``Stocks", and let $Y$ denote the trading volume of the S\&P 500 index.
+Performing linear regression between these two variables gives the line $Y = \hat{\alpha} X + \hat{\beta}$, where $\hat{\alpha} = 2.274 \times 10^9$ and $\hat{\beta} = 7.038 \times 10^7$.
+Let us test the significance of this model at the $0.05$ significance level. We take the hypotheses
+\begin{align*}
+H_0: \beta = 0, \\
+H_1: \beta \ne 0,
+\end{align*}
+but first check the Gauss-Markov conditions.
+
+To check the Gauss-Markov conditions, we will use the plots ???.
+The first plot shows that the expected value of the residuals is approximately $0$, regardless of the value predicted by linear regression. We therefore conclude that the expected values of the residuals are $0$, meaning that the first Gauss-Markov condition is satisfied.
+Using a Q-Q plot comparing the distribution of the residuals with the normal distribution, we check the assumption that the residuals are normally distributed. Since the points lie approximately on a straight line, we accept this assumption.
+The third plot shows that the square root of the absolute value of the standardized residuals is approximately constant, at least in the left half, where most of the data lie. We conclude that the variances of the residuals are approximately constant and consider the second Gauss-Markov condition satisfied.
+It remains to discuss the lack of correlation between the residuals. Since the data have a time component, we naturally expect observations to be correlated with those close to them in time. Reducing the granularity of the data would reduce the correlation because the observations would be further apart in time, but in this paper we will use daily granularity.
+
+We can now construct a $95\%$ confidence interval for $\beta$, which is $...$. This also leads us to conclude that the linear regression is statistically significant at the $0.05$ level, since $0$ is not within this interval; we reject the hypothesis $H_0$.
+For $\alpha$, the $95\%$ confidence interval is $...$.
+
+Figure ... illustrates the linear model with confidence intervals. We justify the relatively close fit of the data to the linear model by the substantial $R^2$ value of $0.5218$.
+
+Let us now consider the dependence of Volatility on ``Trump". From the plots ..., we see that the Gauss-Markov conditions are not satisfied. The expected value of the residuals decreases substantially at high values predicted by the linear model, and the Q-Q plot does not resemble a straight line. Nevertheless, the plot ... suggests that it makes more sense to perform linear regression between $\log(X + 1)$ and $\log(Y + 1)$.
+Indeed, the plots ... show that the Gauss-Markov conditions are closer to being satisfied.
+Linear regression gives $\log(Y + 1) = \hat{\beta} \log(X + 1) + \hat{\alpha}$, where $\hat{\beta} = 0.02607$ and $\hat{\alpha} = 4.0921$.
+To check the significance of this linear regression, we construct a $95\%$ confidence interval for $\beta$, $[-0.17032, 0.22247]$, and observe that $0$ lies within it. Moreover, the $90\%$ confidence interval is $[-0.138419, 0.1995589]$, so even at the $0.10$ level we cannot reject the hypothesis $H_0: \beta = 0$ in favor of $H_1: \beta \ne 0$.
+
+In the next section, we will see how this result changes when we consider multiple linear regression.
+
+
+
+
+
+\end{document}

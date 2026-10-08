@@ -1,0 +1,7 @@
+Descriptive Summary of scaled volume :
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.758   3.881   4.432   4.587   4.866   9.490 
+
+Five Number Summary:
+Minimum      Q1  Median      Q3 Maximum 
+1.75772 3.88061 4.43225 4.86638 9.48960 

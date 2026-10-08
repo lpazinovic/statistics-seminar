@@ -1,0 +1,7 @@
+Descriptive Summary of volatility :
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  18.25   40.80   60.88   77.01   91.01  532.91 
+
+Five Number Summary:
+  Minimum        Q1    Median        Q3   Maximum 
+ 18.25000  40.79980  60.88037  91.01489 532.90967 

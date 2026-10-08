@@ -1,0 +1,7 @@
+Descriptive Summary of Stocks :
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  21.00   26.00   30.00   32.87   35.00  100.00 
+
+Five Number Summary:
+Minimum      Q1  Median      Q3 Maximum 
+     21      26      30      35     100 

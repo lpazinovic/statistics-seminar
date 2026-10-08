@@ -1,0 +1,7 @@
+Descriptive Summary of change :
+     Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
+-491.6201  -34.4700   -1.7500   -0.9113   28.8198  218.0601 
+
+Five Number Summary:
+   Minimum         Q1     Median         Q3    Maximum 
+-491.62012  -34.46997   -1.75000   28.81982  218.06006 

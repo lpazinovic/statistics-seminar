@@ -1,0 +1,7 @@
+Descriptive Summary of Trump :
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  3.000   5.000   7.000   8.629   9.000 100.000 
+
+Five Number Summary:
+Minimum      Q1  Median      Q3 Maximum 
+      3       5       7       9     100 

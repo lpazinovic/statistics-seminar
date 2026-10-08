@@ -1,0 +1,29 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+
+\newpage
+\section{Introduction}
+
+\subsection{Data on the S\&P 500 index}
+
+To obtain reliable historical data on movements in the price of the S\&P500 index, we decided to use Yahoo Finance. Specifically, we examined the \textit{ticker} \^{}GSPC, which tracks only the price of the index (excluding dividend payments). Although indices are not financial instruments (they cannot be traded), Yahoo Finance provides its own internal estimate of the trading volume of financial instruments that track the S\&P500 (ETFs, futures, and similar instruments).
+
+For the ticker \^{}GSPC, we examined historical data from 3 October 2024 to 30 April 2025. We chose October as the starting point to include the period before the election, during which there were many interesting market movements.
+
+Specifically, the data we downloaded for these days were:
+\begin{itemize}
+\item price at market opening
+\item highest price during the day
+\item lowest price during the day
+\item price at market closing
+\item total volume for the day
+\end{itemize}
+
+
+\subsection{Search data}
+
+For search data, we decided to use Google Trends. Google is unquestionably the most widely used search engine today, so its data are the most relevant. Although Google Trends does not provide access to absolute frequencies (the exact number of searches), it does provide relative data. More precisely, the data are normalized so that the highest frequency is exactly $100$. In addition, all values are integers. Google Trends allows search results to be examined within a particular region. Since the S\&P500 is an American market index, we also decided to examine search data only for the United States.
+
+We examined the terms "stocks" and "Trump" and, to obtain the most detailed data possible, retrieved the data separately (so that each term would be normalized separately). We consider the normalization used by Google Trends unproblematic for examining linear dependence, since it is itself a linear transformation.
+
+\end{document}
